@@ -153,35 +153,31 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Sobre mí</h2>
-                    <p>Mi nombre es José Miguel, soy títulado de analista programador,
-                        durante mi periodo estudiantil realizé proyectos de programación en distintos lenguajes, php,
-                        java, sql, json, xml, etc.
-                        Mis proyectos personales están incluido este mismo sitio web,
-                        donde tengo datos sensibles e información que necesito para mi gestión,
-                        también mi propia aplicación móvil pensada y analizada para artitas callejeros especificamente
-                        para los habilidosos malabaristas.
+                    <p class="justificado">Soy José Miguel, un analista programador con título universitario. Durante mi período estudiantil, me sumergí en diversos proyectos de programación, trabajando con varios lenguajes como PHP, Java, SQL, JSON, XML, entre otros. Entre mis logros se encuentra la creación de este sitio web, que alberga datos sensibles e información esencial para mi gestión.
+                        Además, he desarrollado mi propia aplicación móvil diseñada específicamente para artistas callejeros, centrándome especialmente en los hábiles malabaristas. Este proyecto refleja mi pasión por la programación y mi capacidad para aplicar mis habilidades en la creación de soluciones prácticas y únicas. 
+                        Estoy comprometido con la excelencia y la innovación en cada proyecto en el que participo, y estoy emocionado por seguir explorando y contribuyendo al mundo de la programación y el desarrollo de software.
                     </p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4" data-aos="fade-right">
-                        <img src="assets/img/img2.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/fondo.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3>Analista Programador, Desarrollo web &amp; móvil.</h3>
+                        <h3>Analista Programador, Desarrollo web &amp; Móvil.</h3>
                         <p class="fst-italic">
                         </p>
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Cumpleaños:</strong> <span>5 de
-                                            septiembre
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Fecha de nacimiento:</strong> <span>5 de
+                                            septiembre del 
                                             2000</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Sitio Web:</strong>
-                                        <span>www.example.com</span>
+                                        <span><a href="{{route('Welcome')}}">www.joseti.com</a></span>
                                     </li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong>
-                                        <span>+569</span>
+                                        <span>+56935629178</span>
                                     </li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Santiago,
                                             Chile</span></li>
@@ -189,7 +185,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>22</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>23</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -205,7 +201,7 @@
 
                 <div class="section-title">
                     <h2>Hechos</h2>
-                    <p>En esta sección se aprecia los clientes, proyectos, tecnologías dominadas y empresas registradas.
+                    <p>Esta sección proporciona una visión detallada de nuestros clientes, proyectos, tecnologías dominadas y empresas registradas.
                     </p>
                 </div>
 
@@ -222,14 +218,13 @@
                                 $contandorcliente++;
                                 ?>
                             @empty
-                                <!--
-    <tr>
-                                <div>
-                                    <h1>No hay cliente</h1>
-                                </div>
-                            </tr>
-
-                              -->
+                            <!--
+                                <tr>
+                                    <div>
+                                        <h1>No hay cliente</h1>
+                                    </div>
+                                </tr>
+                            -->
                             @endforelse
                             <span data-purecounter-start="0" data-purecounter-end="<?php echo $contandorcliente; ?>"
                                 data-purecounter-duration="1" class="purecounter"></span>
@@ -328,8 +323,8 @@
 
                 <div class="section-title">
                     <h2>Habilidades</h2>
-                    <p>Muestra en porcentaje mis habilidades en tecnología donde personalemte a mi percepción y
-                        opiniones de otras personas considero que estoy capacitado.</p>
+                    <p>En esta sección, presento las tecnologías en las que, desde mi perspectiva personal y basándome en las opiniones de otras personas, considero que poseo habilidades y capacidades destacadas.
+                    </p>                    
                 </div>
 
                 <div class="row skills-content">
@@ -355,14 +350,12 @@
 
                 <div class="section-title">
                     <h2>Resume</h2>
-                    <p>En mi resumen muestra una línea temporal de mi educaciópn y experiencia profesional hasta ahora.
-                    </p>
+                    <p>En mi resumen, se visualiza una línea temporal que abarca mi educación y experiencia profesional hasta el momento.
+                    </p>                    
                 </div>
 
                 <div class="row">
                     <div class="col-lg-6" data-aos="fade-up">
-
-
                         <h3 class="resume-title">Educación</h3>
                         @forelse ($educacion as $item)
                             <div class="resume-item">
@@ -403,10 +396,9 @@
 
                 <div class="section-title">
                     <h2>Portafolio</h2>
-                    <p>En mi portafolio muestra mis proyecto realizados con logotipo y nombre.</p>
+                    <p>En mi portafolio, presento proyectos completados acompañados de su logotipo y nombre.
+                    </p>
                 </div>
-
-
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
                     @forelse ($proyecto as $item)
                         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
@@ -437,25 +429,22 @@
 
                 <div class="section-title">
                     <h2>Servicios</h2>
-                    <p>En está sección está en lista los servicos que entrego como analista en informática.</p>
-                </div>
-
+                    <p>En esta sección, se enumeran los servicios que ofrezco como analista en informática.
+                    </p>
+            </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
                         <div class="icon"><i class="bi bi-briefcase"></i></div>
                         <h4 class="title"><a href="">Portafolio de proyectos software</a></h4>
-                        <p class="description">La codificación es el punto principal entre la interacción de un
-                            software
-                            con un usuario (persona),
-                            por lo que tener respaldo de está misma es necesario para cualquier tipo de negocio.
-                        </p>
+                        <p class="description">La codificación representa el núcleo de la interacción entre un software y el usuario, siendo fundamental contar con un respaldo sólido de esta fase para el éxito de cualquier tipo de negocio.
+                        </p>                        
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon"><i class='bx bx-microchip'></i></div>
                         <h4 class="title"><a href="">Mantención</a></h4>
-                        <p class="description">La mantención del software y hardware permite conservar, garantizar el
-                            funcionamiento de este mismo para evitar fallos, esto es necesarios para reducir costos y
-                            evitar problemas.</p>
+                        <p>La mantenimiento del software y hardware es esencial para preservar y asegurar su correcto funcionamiento, evitando fallos. Esta práctica es necesaria para reducir costos y prevenir problemas a largo plazo.
+                        </p>
+                        
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon"><i class='bx bx-support'></i></div>
@@ -466,23 +455,20 @@
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon"><i class="bi bi-binoculars"></i></div>
                         <h4 class="title"><a href="">Investigación</a></h4>
-                        <p class="description">La investigación es primordial al recopilar información nueva para la
-                            mejoras y soluciones concretas para la necesidad del cliente.</p>
+                        <p class="description">La investigación desempeña un papel fundamental al recopilar nueva información para idear mejoras y ofrecer soluciones concretas que satisfagan las necesidades del cliente.
+                        </p>                        
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                         <div class="icon"><i class='bx bx-task'></i></div>
                         <h4 class="title"><a href=""></a>Automatización de procesos</h4>
-                        <p class="description">Esto es necesario para la optimización de tareas o actividades mediante
-                            un software, sustituye obejetos manuales por acciones automáticas esto facilita porcesos sin
-                            mayor esfuerzo.</p>
+                        <p class="description">Es esencial para la optimización de tareas o actividades mediante el uso de software, reemplazando acciones manuales con procesos automáticos. Esto facilita las operaciones sin requerir un esfuerzo significativo.
+                        </p>                        
                     </div>
                     <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
                         <div class="icon"><i class='bx bx-vector'></i></div>
                         <h4 class="title"><a href="">Calidad de software</a></h4>
-                        <p class="description">La calidad del software necesita mucho esfuerzo, para que cumpla con las
-                            expectativas del usuario, tomando en cuenta las especificaciones, requisitos necesarios para
-                            el desarrollo de cualquier sistema, debe ser adaptado a los requerimientos establecidos.
-                        </p>
+                        <p class="description">Lograr la calidad del software requiere un esfuerzo significativo para cumplir con las expectativas del usuario. Esto implica tener en cuenta las especificaciones y requisitos necesarios para el desarrollo de cualquier sistema, asegurándose de que esté adaptado a los requerimientos establecidos.
+                        </p>                        
                     </div>
                 </div>
 
@@ -494,19 +480,21 @@
 
                 <div class="section-title">
                     <h2>Contacto</h2>
-                    <p>En la última sección apreciará un formulario de contacto, si desea contactarse debe ingresar sus
-                        datos y enviarme un mensaje para tener en cuenta su necesidad.</p>
+                    <p>En la sección final, encontrará un formulario de contacto. Si desea comunicarse, simplemente complete sus datos y envíeme un mensaje para que pueda entender mejor sus necesidades.
+                    </p>                    
                 </div>
 
                 <div class="row" data-aos="fade-in">
 
                     <div class="col-lg-5 d-flex align-items-stretch">
                         <div class="info">
-                            <div class="address">
+                            <!--
+                                  <div class="address">
                                 <i class="bi bi-geo-alt"></i>
                                 <h4>Location:</h4>
                                 <p>A108 Adam Street, New York, NY 535022</p>
                             </div>
+                            -->
 
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
@@ -517,7 +505,7 @@
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4>Teléfono:</h4>
-                                <p>+</p>
+                                <p>+56935629178</p>
                             </div>
 
                             <!-- Puede ingresar un mapa de ubicación de trabajo con 250 alto y ancho del mapa  -->

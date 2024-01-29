@@ -12,10 +12,14 @@ class Proyecto extends Model
     protected $table = 'proyectos';
 
     protected $fillable = [
+        'id',
         'nombre',
         'imagen',
         'descripcion',
+        'documento',
         'empresa_id',
+        'created_at',
+        'updated_at'
     ];
 
     public function empresa()

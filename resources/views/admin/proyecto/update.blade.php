@@ -60,6 +60,19 @@
                                 @endforeach
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label for="input-5">Documento</label>
+                            <input type="file" class="form-control" name="documento">
+                            @error('documento')
+                                <small>
+                                    <strong>
+                                        <div class="alert alert-danger" role="alert">
+                                            Tipo de archivo no compatible con la imágenes
+                                        </div>
+                                    </strong>
+                                </small>
+                            @enderror
+                        </div>
                         <div class="col-md-6 mb-3">
                             <label for="input-2">Estado</label>
                             <input type="checkbox" name="estado" {{ $proyecto->estado == '1' ? 'checked':'' }} /> <br>

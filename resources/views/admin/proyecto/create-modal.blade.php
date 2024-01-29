@@ -21,26 +21,26 @@
                                         <label for="input-2">Nombre</label>
                                         <input type="text" class="form-control" name="nombre">
                                         @error('nombre')
-                                        <small>
-                                            <strong>
-                                                <div class="alert alert-danger" role="alert">
-                                                    Campo vacío
-                                                </div>
-                                            </strong>
-                                        </small>
+                                            <small>
+                                                <strong>
+                                                    <div class="alert alert-danger" role="alert">
+                                                        Campo vacío
+                                                    </div>
+                                                </strong>
+                                            </small>
                                         @enderror
                                     </div>
                                     <div class="form-group">
                                         <label for="input-2">Enlace de acceso</label>
                                         <input type="text" class="form-control" name="link">
                                         @error('link')
-                                        <small>
-                                            <strong>
-                                                <div class="alert alert-danger" role="alert">
-                                                    Campo vacío
-                                                </div>
-                                            </strong>
-                                        </small>
+                                            <small>
+                                                <strong>
+                                                    <div class="alert alert-danger" role="alert">
+                                                        Campo vacío
+                                                    </div>
+                                                </strong>
+                                            </small>
                                         @enderror
                                     </div>
                                     <div class="form-group">
@@ -49,16 +49,15 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="input-3">Descripción</label>
-                                        <textarea name="descripcion" id="" cols="30" rows="10"
-                                            class="form-control"></textarea>
-                                            @error('descripcion')
-                                        <small>
-                                            <strong>
-                                                <div class="alert alert-danger" role="alert">
-                                                    Campo vacío
-                                                </div>
-                                            </strong>
-                                        </small>
+                                        <textarea name="descripcion" id="" cols="30" rows="10" class="form-control"></textarea>
+                                        @error('descripcion')
+                                            <small>
+                                                <strong>
+                                                    <div class="alert alert-danger" role="alert">
+                                                        Campo vacío
+                                                    </div>
+                                                </strong>
+                                            </small>
                                         @enderror
                                     </div>
                                     <div class="form-group">
@@ -66,30 +65,43 @@
                                         <select name="empresa_id" class="form-control">
                                             <option value="">Seleccionar empresa</option>
                                             @foreach ($empresa as $item)
-                                            <option value="{{ $item->id }}">{{ $item->nombre }}</option>
+                                                <option value="{{ $item->id }}">{{ $item->nombre }}</option>
                                             @endforeach
                                         </select>
                                         @error('empresa_id')
-                                        <small>
-                                            <strong>
-                                                <div class="alert alert-danger" role="alert">
-                                                    Campo vacío
-                                                </div>
-                                            </strong>
-                                        </small>
+                                            <small>
+                                                <strong>
+                                                    <div class="alert alert-danger" role="alert">
+                                                        Campo vacío
+                                                    </div>
+                                                </strong>
+                                            </small>
                                         @enderror
                                     </div>
                                     <div class="form-group">
                                         <label for="input-5">Imagen</label>
                                         <input type="file" class="form-control" name="imagen">
                                         @error('imagen')
-                                        <small>
-                                            <strong>
-                                                <div class="alert alert-danger" role="alert">
-                                                    Tipo de archivo no compatible con la imágenes
-                                                </div>
-                                            </strong>
-                                        </small>
+                                            <small>
+                                                <strong>
+                                                    <div class="alert alert-danger" role="alert">
+                                                        Tipo de archivo no compatible con la imágenes
+                                                    </div>
+                                                </strong>
+                                            </small>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input-5">Documento</label>
+                                        <input type="file" class="form-control" name="documento">
+                                        @error('documento')
+                                            <small>
+                                                <strong>
+                                                    <div class="alert alert-danger" role="alert">
+                                                        Tipo de archivo no compatible con la imágenes
+                                                    </div>
+                                                </strong>
+                                            </small>
                                         @enderror
                                     </div>
                                     <div class="modal-footer">

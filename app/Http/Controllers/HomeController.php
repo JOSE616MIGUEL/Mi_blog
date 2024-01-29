@@ -7,6 +7,8 @@ use App\Models\Empresa;
 use App\Models\Cliente;
 use App\Models\Proyecto;
 use App\Models\Venta;
+use App\Models\User;
+
 
 class HomeController extends Controller
 {
@@ -21,6 +23,7 @@ class HomeController extends Controller
         $proyecto = Proyecto::all();
         $empresa = Empresa::all();
         $cliente = Cliente::all();
+        $user = User::all();
         $puntos = [];
         $venta = Venta::all(); 
         foreach ($venta as $sale){
@@ -30,6 +33,6 @@ class HomeController extends Controller
           
         }
         
-        return view('home', compact('cliente','empresa','proyecto','venta'),["data" => json_encode($puntos)]);
+        return view('home', compact('cliente','empresa','proyecto','venta','user'),["data" => json_encode($puntos)]);
     }
 }

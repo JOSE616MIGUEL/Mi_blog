@@ -15,6 +15,14 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a href="{{ route('User.index') }}">
+                    <span class="icon">
+                    <img src="{{asset('img/icon/cliente1.png')}}" alt="" width="22" height="22">
+                    </span>
+                    <span class="text">Usuarios</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a href="{{ route('Empresa.index') }}">
                     <span class="icon">
                     <img src="{{asset('img/icon/empresa1.png')}}" alt="" width="22" height="22">

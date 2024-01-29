@@ -15,6 +15,7 @@
                     <th>Imagen</th>
                     <th>Descripción</th>
                     <th>Empresa</th>
+                    <th>Documento</th>
                 </thead>
                 <tbody>
                     <tr>
@@ -28,6 +29,7 @@
                         </td>
                         <td>{{ $proyecto->descripcion }}</td>
                         <td>{{ $proyecto->empresa->nombre }}</td>
+                    <td>{{ $proyecto->documento }}</td>
                     </tr>
                 </tbody>
             </table>

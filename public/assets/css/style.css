@@ -26,6 +26,9 @@ h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+.justificado {
+  text-align: justify;
+}
 .back-to-top {
   position: fixed;
   visibility: hidden;

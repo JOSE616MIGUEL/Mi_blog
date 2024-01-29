@@ -29,13 +29,13 @@
                 <div class="table table-reposive">
                     <table class="table table-sm table-bordered display" id="myTable">
                         <thead>
-                            <th>N.</th>
-                            <th>Imagen</th>
-                            <th>Nombre</th>
-                            <th>Tipo</th>
-                            <th>Creado</th>
-                            <th>Actualizado</th>
-                            <th>Acciones</th>
+                            <th class="text-white">N.</th>
+                            <th class="text-white">Imagen</th>
+                            <th class="text-white">Nombre</th>
+                            <th class="text-white">Tipo</th>
+                            <th class="text-white">Creado</th>
+                            <th class="text-white">Actualizado</th>
+                            <th class="text-white">Acciones</th>
                         </thead>
                         <tbody>
                             <?php
@@ -58,7 +58,7 @@
                                 <td>{{ $item->updated_at}}</td>
                                 <td>
                                     <div class="d-grid gap-2">
-                                        <a class="btn btn-warning" href="{{ route('Tecnologia.edit', $item->id) }}"
+                                        <a class="btn btn-outline-secondary" href="{{ route('Tecnologia.edit', $item->id) }}"
                                             role="button">Editar</a>
                                         <a class="btn btn-danger" href="{{ route('Tecnologia.show', $item->id) }}"
                                             role="button">Eliminar</a>

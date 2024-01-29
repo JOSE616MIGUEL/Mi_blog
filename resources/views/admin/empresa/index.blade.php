@@ -30,14 +30,14 @@
                     <table class="table table-sm table-bordered display" id="myTable">
                         <div id="dvData">
                             <thead>
-                                <th>N.</th>
-                                <th>Rut</th>
-                                <th>Nombre</th>
-                                <th>Ubicación</th>
-                                <th>Fono</th>
-                                <th>Correo</th>
-                                <th>Razon Social</th>
-                                <th>Acciones</th>
+                                <th class="text-white">N.</th>
+                                <th class="text-white">Rut</th>
+                                <th class="text-white">Nombre</th>
+                                <th class="text-white">Ubicación</th>
+                                <th class="text-white">Fono</th>
+                                <th class="text-white">Correo</th>
+                                <th class="text-white">Razon Social</th>
+                                <th class="text-white">Acciones</th>
                             </thead>
                             <tbody>
                                 <?php
@@ -55,7 +55,7 @@
                                     <td>{{ $item->razon_social }}</td>
                                     <td>
                                         <div class="d-grid gap-2">
-                                            <a class="btn btn-warning" href="{{ route('Empresa.edit', $item->id) }}"
+                                            <a class="btn btn-outline-secondary" href="{{ route('Empresa.edit', $item->id) }}"
                                                 role="button">Editar</a>
                                             <a class="btn btn-danger" href="{{ route('Empresa.show', $item->id) }}"
                                                 role="button">Eliminar</a>

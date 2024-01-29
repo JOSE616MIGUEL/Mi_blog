@@ -12,6 +12,7 @@ class Cliente extends Model
     protected $table = 'clientes';
 
     protected $fillable = [
+        'id',
         'rut',
         'nombre',
         'a_paterno',
@@ -20,6 +21,8 @@ class Cliente extends Model
         'correo',
         'cargo',
         'empresa_id',
+        'created_at',
+        'updated_at'
     ];
 
     public function empresa()

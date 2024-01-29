@@ -29,16 +29,16 @@
                 <div class="table table-reposive">
                     <table class="table table-sm table-bordered display" id="myTable">
                         <thead>
-                            <th>N.</th>
-                            <th>Rut</th>
-                            <th>Nombre</th>
-                            <th>A. Paterno</th>
-                            <th>A. Materno</th>
-                            <th>Fono</th>
-                            <th>Correo</th>
-                            <th>Cargo</th>
-                            <th>Empresa</th>
-                            <th>Acciones</th>
+                            <th class="text-white">N.</th>
+                            <th class="text-white">Rut</th>
+                            <th class="text-white">Nombre</th>
+                            <th class="text-white">A. Paterno</th>
+                            <th class="text-white">A. Materno</th>
+                            <th class="text-white">Fono</th>
+                            <th class="text-white">Correo</th>
+                            <th class="text-white">Cargo</th>
+                            <th class="text-white">Empresa</th>
+                            <th class="text-white">Acciones</th>
                         </thead>
                         <tbody>
                             <?php
@@ -58,7 +58,7 @@
                                 <td>{{$item->empresa->nombre}}</td>
                                 <td>
                                     <div class="d-grid gap-2">
-                                        <a class="btn btn-warning" href="{{ route('Cliente.edit', $item->id) }}"
+                                        <a class="btn btn-outline-secondary" href="{{ route('Cliente.edit', $item->id) }}"
                                             role="button">Editar</a>
                                         <a class="btn btn-danger" href="{{ route('Cliente.show', $item->id) }}"
                                             role="button">Eliminar</a>
@@ -70,12 +70,11 @@
             ?>
                             @empty
                             <!--
-    <tr>
+                            <tr>
                                 <div>
                                     <h1>No hay productos</h1>
                                 </div>
                             </tr>
-
                               -->
                             @endforelse
                         </tbody>

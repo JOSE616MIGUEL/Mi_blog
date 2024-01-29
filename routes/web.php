@@ -215,6 +215,24 @@ Route::get('show-experiencia/{id}',[ExperienciaController::class, 'show'])->name
 Route::delete('destroy-experiencia/{id}',[ExperienciaController::class, 'destroy'])->name('Experiencia.destroy');
 
 //fin experiencia
+
+//User
+
+Route::get('user', [UsuarioController::class, 'index'])->name('User.index');
+
+Route::get('create-user', [UsuarioController::class, 'create'])->name('User.create');
+
+Route::post('store-user', [UsuarioController::class, 'store'])->name('User.store');
+
+Route::get('edit-user/{id}',[UsuarioController::class, 'edit'])->name('User.edit');
+    
+Route::put('update-user/{id}',[UsuarioController::class, 'update'])->name('User.update');
+    
+Route::get('show-user/{id}',[UsuarioController::class, 'show'])->name('User.show');
+    
+Route::delete('destroy-user/{id}',[UsuarioController::class, 'destroy'])->name('User.destroy');
+
+//fin user
 }); 
 
 

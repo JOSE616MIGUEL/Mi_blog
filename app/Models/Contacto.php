@@ -11,9 +11,12 @@ class Contacto extends Model
     protected $table = 'contactos';  
 
     protected $fillable = [
+        'id',
         'asunto',
         'mensaje',
         'users_id',
+        'created_at',
+        'updated_at'
     ];
 
     public function users()

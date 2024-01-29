@@ -5,7 +5,7 @@
                 <div class="header-left d-flex align-items-center">
                     <div class="menu-toggle-btn mr-20">
                         <button id="menu-toggle" class="main-btn primary-btn btn-hover">
-                            <i class="lni lni-chevron-left me-2"></i> Menu
+                            <i class="lni lni-chevron-left me-2"></i>
                         </button>
                     </div>
                 </div>
@@ -15,15 +15,15 @@
                     <!-- profile start -->
                     <div class="profile-box ml-15">
                        <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Búsqueda
+                    <button type="button" class="btn btn-danger text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="{{ asset('img/icon/buscar.png') }}" alt="" width="30px" height="30px">
                     </button>
                     @include('layouts.inc.modal-busqueda')
                         <button class="dropdown-toggle bg-transparent border-0" type="button" id="profile"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <div class="profile-info">
                                 <div class="info">
-                                    <h5>{{ Auth::user()->name }}</h5>
+                                    <h5 class="text-light">{{ Auth::user()->name }}</h5>
                                     <div class="image">
                                         @if(Auth::user()->imagen)
                                         <img src="{{ asset(Auth::user()->imagen) }}" alt="" height="40px">
@@ -36,19 +36,6 @@
                             <i class="lni lni-chevron-down"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
-                            <li>
-                                <a href="#0">
-                                    <i class="lni lni-user"></i> View Profile
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0">
-                                    <i class="lni lni-alarm"></i> Notifications
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
-                            </li>
                             <li>
                                 <a href="{{ route('Usuario.configuration', Auth::user()->id ) }}"> <i
                                         class="lni lni-cog"></i> Configuración </a>

@@ -30,13 +30,13 @@
                     <div class="scroll">
                         <table class="table table-sm table-bordered display" id="myTable">
                             <thead>
-                                <th>N.</th>
-                                <th>Nombre</th>
-                                <th>Año inicio</th>
-                                <th>Año termino</th>
-                                <th>Institución</th>
-                                <th>Descripción</th>
-                                <th>Acciones</th>
+                                <th class="text-white">N.</th>
+                                <th class="text-white">Nombre</th>
+                                <th class="text-white">Año inicio</th>
+                                <th class="text-white">Año termino</th>
+                                <th class="text-white">Institución</th>
+                                <th class="text-white">Descripción</th>
+                                <th class="text-white">Acciones</th>
                             </thead>
                             <tbody>
                                 <?php
@@ -53,7 +53,7 @@
                                     <td>{{$item->descripcion}}</td>
                                     <td>
                                         <div class="d-grid gap-2">
-                                            <a class="btn btn-warning" href="{{ route('Educacion.edit', $item->id) }}"
+                                            <a class="btn btn-outline-secondary" href="{{ route('Educacion.edit', $item->id) }}"
                                                 role="button">Editar</a>
                                             <a class="btn btn-danger" href="{{ route('Educacion.show', $item->id) }}"
                                                 role="button">Eliminar</a>

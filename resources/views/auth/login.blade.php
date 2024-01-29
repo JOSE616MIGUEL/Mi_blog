@@ -42,7 +42,10 @@
                                 <button type="submit" class="btn btn-outline-light btn-lg px-5">
                                     {{ __('Login') }}
                                 </button>
-                                <a href="{{ route('register') }}" class="btn btn-outline-light btn-lg px-5">Registrarse</a>
+                                <div class="form-outline form-white mb-4">
+                                    <br>
+                                    <a href="{{ route('register') }}" class="px-5">Registrarse</a>
+                                </div>
 
                                 <!--
                                     @if (Route::has('password.request'))

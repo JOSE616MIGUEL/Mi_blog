@@ -66,6 +66,7 @@ class ProyectoController extends Controller
             'nombre' => 'required',
             'link' => 'required',
             'descripcion' => 'required',
+            'documento' => 'required',
             'empresa_id' => 'required',
             'imagen' => 'required|nullable|image|mimes:jpeg,jpg,png,gif',
         ]);
@@ -80,6 +81,13 @@ class ProyectoController extends Controller
             $nombreimagen = time() . '-' . $imagen->getClientOriginalName();
             $uploadSuccess = $request->file('imagen')->move($url,$nombreimagen);
             $proyecto->imagen = $url. $nombreimagen;
+        }
+        if($request->hasFile('documento')){
+            $imagen = $request->file('documento');
+            $url = 'archivos/documentacion-software/';
+            $nombreimagen = time() . '-' . $imagen->getClientOriginalName();
+            $uploadSuccess = $request->file('documento')->move($url,$nombreimagen);
+            $proyecto->documento = $url. $nombreimagen;
         }
         $proyecto->save();
 
@@ -120,6 +128,13 @@ class ProyectoController extends Controller
             $uploadSuccess = $request->file('imagen')->move($url,$nombreimagen);
             $proyecto->imagen = $url. $nombreimagen;
         }
+        if($request->hasFile('documento')){
+            $imagen = $request->file('documento');
+            $url = 'archivos/documentacion-software/';
+            $nombreimagen = time() . '-' . $imagen->getClientOriginalName();
+            $uploadSuccess = $request->file('documento')->move($url,$nombreimagen);
+            $proyecto->documento = $url. $nombreimagen;
+        }
         $proyecto->save();
        
         return redirect()->route("Proyecto.index")->with("success", "Actualizado con exito!");
@@ -134,6 +149,13 @@ class ProyectoController extends Controller
             if(File::exists($proyecto->imagen))
             {
                 File::delete($proyecto->imagen);
+            }
+        }
+        if($proyecto->documento)
+        {
+            if(File::exists($proyecto->documento))
+            {
+                File::delete($proyecto->documento);
             }
         }
         $proyecto->delete();

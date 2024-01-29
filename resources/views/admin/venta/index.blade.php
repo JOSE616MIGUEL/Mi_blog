@@ -29,12 +29,12 @@
                 <div class="table table-reposive">
                     <table class="table table-sm table-bordered display" id="myTable">
                         <thead>
-                            <th>N.</th>
-                            <th>Cliente</th>
-                            <th>Empresa</th>
-                            <th>Proyecto</th>
-                            <th>Precio</th>
-                            <th></th>
+                            <th class="text-white">N.</th>
+                            <th class="text-white">Cliente</th>
+                            <th class="text-white">Empresa</th>
+                            <th class="text-white">Proyecto</th>
+                            <th class="text-white">Precio</th>
+                            <th class="text-white"></th>
                         </thead>
                         <tbody>
                             <?php
@@ -50,7 +50,7 @@
                                 <td>{{ $item->precio }}</td>
                                 <td>
                                 <div class="d-grid gap-2">
-                                            <a class="btn btn-warning" href="{{ route('Venta.edit', $item->id) }}"
+                                            <a class="btn btn-outline-secondary" href="{{ route('Venta.edit', $item->id) }}"
                                                 role="button">Editar</a>
                                             <a class="btn btn-danger" href="{{ route('Venta.show', $item->id) }}"
                                                 role="button">Eliminar</a>

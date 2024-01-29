@@ -29,14 +29,15 @@
                 <div class="table table-reposive">
                     <table class="table table-sm table-bordered display" id="myTable">
                         <thead>
-                            <th>N.</th>
-                            <th>Nombre</th>
-                            <th>Imagen</th>
-                            <th>Descripción</th>
-                            <th>Empresa</th>
-                            <th>Estado</th>
-                            <th>Enlace</th>
-                            <th>Acciones</th>
+                            <th class="text-white">N.</th>
+                            <th class="text-white">Nombre</th>
+                            <th class="text-white">Imagen</th>
+                            <th class="text-white">Descripción</th>
+                            <th class="text-white">Empresa</th>
+                            <th class="text-white">Estado</th>
+                            <th class="text-white">Enlace</th>
+                            <th class="text-white">Documentación</th>
+                            <th class="text-white">Acciones</th>
                         </thead>
                         <tbody>
                             <?php
@@ -58,9 +59,10 @@
                                 <td>{{$item->empresa->nombre}}</td>
                                 <td>{{$item->estado == '0' ? 'No visible':'Visible'}}</td>
                                 <td><a href="{{$item->link}}" target="__blank">{{$item->link}}</a></td>
+                                <td><a href="{{asset($item->documento)}}" target="__blank">{{$item->documento}}</a></td>
                                 <td>
                                     <div class="d-grid gap-2">
-                                        <a class="btn btn-warning" href="{{ route('Proyecto.edit', $item->id) }}"
+                                        <a class="btn btn-outline-secondary" href="{{ route('Proyecto.edit', $item->id) }}"
                                             role="button">Editar</a>
                                         <a class="btn btn-danger" href="{{ route('Proyecto.show', $item->id) }}"
                                             role="button">Eliminar</a>

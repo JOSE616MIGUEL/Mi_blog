@@ -9,4 +9,15 @@ class ExperienciaProfesional extends Model
 {
     use HasFactory;
     protected $table = 'experiencia_profesionals';
+
+    protected $fillable = [
+        'id',
+        'nombre',
+        'inicio',
+        'termino',
+        'lugar',
+        'descripcion',
+        'created_at',
+        'updated_at'
+    ];
 }
